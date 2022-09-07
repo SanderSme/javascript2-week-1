@@ -97,19 +97,45 @@
 
 //average of array:
 
-const myArray = [1, 3, 6, 8, 26];
+// const myArray = [1, 3, 6, 8, 26];
 
-function getArrayAverage(arr) {
-  var total = 0;
-  for (let i = 0; i < arr.length; i++) {
-    total += arr[i];
-  }
-  console.log(total);
-  const numberOfItemsInArr = arr.length;
-  console.log(numberOfItemsInArr);
-  let average = total / numberOfItemsInArr;
-  return average;
+// function getArrayAverage(arr) {
+//   var total = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     total += arr[i];
+//   }
+//   console.log(total);
+//   const numberOfItemsInArr = arr.length;
+//   console.log(numberOfItemsInArr);
+//   let average = total / numberOfItemsInArr;
+//   return average;
+// }
+// const resultAverage = getArrayAverage(myArray);
+
+// console.log("AverageOfArray: ", resultAverage);
+
+//When you make an API-call
+
+//https://catfact.ninja/fact
+
+// function getCatFacts() {
+//   fetch("https://catfact.ninja/facts")
+//     .then((response) => {
+//       return response.json();
+//     })
+//     .then((data) => {
+//       console.log(data.data);
+//     })
+//     .catch((error) => {});
+// }
+// getCatFacts();
+
+async function getCatyFacts() {
+  const response = await fetch("https://catfact.ninja/facts");
+  console.log(response);
+  const catFacts = await response.json();
+  console.log(catFacts);
+  console.log(catFacts.data);
+  return catFacts;
 }
-const resultAverage = getArrayAverage(myArray);
-
-console.log("AverageOfArray: ", resultAverage);
+getCatyFacts().then((r) => {});

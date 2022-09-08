@@ -130,12 +130,20 @@
 // }
 // getCatFacts();
 
-async function getCatyFacts() {
-  const response = await fetch("https://catfact.ninja/facts");
-  console.log(response);
-  const catFacts = await response.json();
-  console.log(catFacts);
-  console.log(catFacts.data);
-  return catFacts;
+// async function getCatyFacts() {
+//   const response = await fetch("https://catfact.ninja/facts");
+//   console.log(response);
+//   const catFacts = await response.json();
+//   console.log(catFacts);
+//   console.log(catFacts.data);
+//   return catFacts;
+// }
+// getCatyFacts().then((r) => {});
+
+function timerTest() {
+  for (let i = 0; i < 10; i++) {
+    console.log(i === 2);
+  }
 }
-getCatyFacts().then((r) => {});
+
+timerTest();

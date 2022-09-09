@@ -26,16 +26,21 @@
 
 //Example:
 //store data in localstorage:
-localStorage.setItem("name", "Sander");
-localStorage.setItem("age", "27");
-localStorage.setItem("city", "Oslo");
+// localStorage.setItem("name", "Sander");
+// localStorage.setItem("age", "27");
+// localStorage.setItem("city", "Oslo");
 
-//get data from localstorage:
-const name = localStorage.getItem("name");
-console.log(name);
+// //get data from localstorage:
+// const name = localStorage.getItem("name");
+// console.log(name);
 
-//remove item from localstorage:
-localStorage.removeItem("age");
+// //remove item from localstorage:
+// localStorage.removeItem("age");
 
-//Clear all data from localstorage:
-localStorage.clear();
+// //Clear all data from localstorage:
+// localStorage.clear();
+
+//create a project
+//add tailwindCSS
+//create a button which toggle between light and dark theme
+//if you click the button it will make the bg of the body dark, click again it makes it light
